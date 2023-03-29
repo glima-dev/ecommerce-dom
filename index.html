@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Projeto Front End: E-commerce</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <div class="logoContainer">
+          <h1>WearTake</h1>
+        </div>
+        <nav class="navContainer">
+          <button>Todos</button>
+          <button>Acessórios</button>
+          <button>Calçados</button>
+          <button>Camiseta</button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <ul class="containerProdutos"></ul>
+      </section>
+      <aside class="containerLateral">
+        <section class="containerPesquisa">
+          <input
+            class="searchBar"
+            type="text"
+            placeholder="Digite aqui sua pesquisa"
+          />
+          <button>Pesquisar</button>
+        </section>
+        <section class="carrinhoDeCompras">
+          <h3>Carrinho de compras</h3>
+          <div class="listaProdutos"></div>
+          <div class="divResumo"></div>
+        </section>
+      </aside>
+    </main>
+    <script src="./js/database.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
